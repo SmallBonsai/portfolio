@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login-protected homepage</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <!--  extra protected stylesheet for this page -->
+    <link rel="stylesheet" href="/user/hello.css">
+  </head>
+  
+  <h1>
+     This is our protected homepage!
+  </h1>
+  <body>
+    <main>
+      <div class="imageWrapper">
+        <img src="/assets/testImage.jpg"/>
+      </div>
+      <p id="cookieMessage">
+        My cookie is
+      </p>
+    </main>
+    <script src="/user/hello.js"></script>
+    
+    <a href="logoff">
+        <button class="centered" id="logoutButton">
+          Log out
+        </button>
+      </a>
+ 
+    <footer>
+      <p class="msg">
+         Made on Glitch!
+      </p>
+    </footer>
+  
+  </body>
+</html>

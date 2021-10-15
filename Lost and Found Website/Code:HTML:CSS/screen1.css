@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #365c85;
+}
+
+footer {
+  flex-grow: 0;
+  height: 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+div.imageWrapper>img {
+  width: 100%;
+}
+
+div#box {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 60%;
+}
+
+div.davis-logo {
+  padding: 40px 0;
+}
+
+a.google-button {
+  display: flex;
+  width: 80%;
+}
+
+a.google-button>img {
+  width: 20%;
+}
+
+button#loginStartButton {
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: #142a50;
+}
+
+#errorMessage {
+  display: none;
+  color: red;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    flex-direction: row;
+    height: 100%;
+  }
+  footer {
+    height: 0%;
+  }
+  div.imageWrapper {
+    width: 50%;
+  }
+  div.imageWrapper>img {
+    height: 100%;
+    object-fit: cover;
+  }
+  div#box {
+    width: 50%;
+  }
+}

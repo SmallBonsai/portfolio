@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UCD Lost & Found</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body id="lost-box">
+    <header>
+      <img id="home" src="https://cdn.glitch.com/61d1c6de-c540-4e4f-b243-fccc07ae65a5%2FLogo.png?v=1591416794633"/>
+    </header>
+    <main>
+      <p id = "errorMessage">
+        One entry must be filled
+      </p>
+      <h1>Input the lost item</h1>
+      <div id="input-box">
+        <h2>Title</h2>
+        <div class="title-textbox" contenteditable="true"></div>
+        <h2>Category</h2>
+        <form action="/action_page.php" method="get">
+          <input list="categories" name="category" id="category">
+          <datalist id="categories">
+            <option value="Electronics">
+            <option value="Collectibles & Art">
+            <option value="Clothes">
+            <option value="Home & Garden">
+            <option value="Sporting Goods">
+            <option value="Toys & Hobbies">
+            <option value="Books & Movies"> 
+            <option value="School ID">
+            <option value="Valuables">
+          </datalist>
+        </form>
+        
+        <h2>Description</h2>
+        <div class="desc-textbox" contenteditable="true"></div>
+        <h2>Attach a photo (optional)</h2>
+        <input id="photo-button" type="file" accept="image/*" name="photo"/>
+        <img id="photo-box"/>
+        <div class="navy-button">Next</div>
+      </div>
+      <h1>Or search for existing items</h1>
+      <div id="search-bar-lost">
+        <div class="small-textbox" contenteditable="true"></div>
+        <img src="https://cdn.glitch.com/61d1c6de-c540-4e4f-b243-fccc07ae65a5%2Fsearch-solid.svg?v=1591416798204"/>
+      </div>
+    </main>
+      <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <footer>
+      <script src="./script.js"></script>
+    </footer>
+
+  </body>
+</html>

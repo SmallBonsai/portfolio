@@ -1,0 +1,5 @@
+Files: classifier_neuralnetwork.py
+Last worked on: December 2020
+Group Project (code sample is mine)
+
+About: classifier_neuralnetwork.py is code that I wrote to help conduct research for an archive as a part of my Data Science class. The archive was investigating different methods to try to classify images automatically through computer vision technology. Since this technology is still developing, we did a comparison of neural network classification and compared it to an OpenCV SURF algorithm. This code sample required accessing directories, preprocessing images for computer vision purposes, and utilizing the TensorFlow library for machine learning. I had to collaborate with archive researchers, my groupmates and professor to ask questions about technical specifics for neural networks. For a rundown of more technical discussion/our data, the data report is our collaborative analysis of the methods used and challenges encountered in this project.
